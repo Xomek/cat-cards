@@ -21,7 +21,7 @@ const Home: FC = () => {
       weight: EWeightFood.zeroFive,
       description: "Печень утки разварная с артишоками.",
       count: 12,
-      imgSrc: "/assets/image/cat3.png",
+      imgSrc: "./assets/image/cat3.png",
     },
     {
       id: "2",
@@ -32,7 +32,7 @@ const Home: FC = () => {
       weight: EWeightFood.two,
       description: "Головы щучьи с чесноком да свежайшая сёмгушка.",
       count: 0,
-      imgSrc: "/assets/image/cat.png",
+      imgSrc: "./assets/image/cat.png",
     },
     {
       id: "3",
@@ -43,7 +43,7 @@ const Home: FC = () => {
       weight: EWeightFood.five,
       description: "Филе из цыплят с трюфелями в бульоне.",
       count: 32,
-      imgSrc: "/assets/image/cat2.png",
+      imgSrc: "./assets/image/cat2.png",
     },
   ];
 
