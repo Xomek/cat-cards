@@ -27,6 +27,11 @@
   border-radius: 11px;
   background-color: #fff;
   clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
+  &:hover {
+    .circle {
+      background-color: $blueHover;
+    }
+  }
 }
 
 .img {
@@ -155,6 +160,11 @@
 .active {
   .circle {
     background-color: $pink;
+  }
+  &:hover {
+    .circle {
+      background-color: $pinkHover;
+    }
   }
 }
 
