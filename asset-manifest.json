@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cat-cards/static/css/main.726f01da.css",
+    "main.js": "/cat-cards/static/js/main.62edf5d7.js",
+    "static/media/bg.jpg": "/cat-cards/static/media/bg.a86b9781eb32f442206d.jpg",
+    "static/media/cat.png": "/cat-cards/static/media/cat.a83eacc15adf593a8935.png",
+    "index.html": "/cat-cards/index.html",
+    "main.726f01da.css.map": "/cat-cards/static/css/main.726f01da.css.map",
+    "main.62edf5d7.js.map": "/cat-cards/static/js/main.62edf5d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.726f01da.css",
+    "static/js/main.62edf5d7.js"
+  ]
+}
