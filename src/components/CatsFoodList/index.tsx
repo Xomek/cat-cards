@@ -17,7 +17,6 @@ const CatsFoodList: FC<ICatsFoodListProps> = ({
 
   return (
     <div className={catsFoodListStyles} {...props}>
-      <h2 className={styles.title}>Ты сегодня покормил кота?</h2>
       {catsFoodArr.map((catsFood) => (
         <CatsFood key={catsFood.id} catsFood={catsFood} />
       ))}
