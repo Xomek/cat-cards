@@ -6,9 +6,7 @@ export enum EWeightFood {
 
 export interface ICatsFood {
   id: string;
-  tagline: string;
   title: string;
   description: string;
   weight: EWeightFood;
-  subText: string;
 }
