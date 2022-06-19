@@ -153,12 +153,20 @@
   background-color: rgba(white, 0.7);
 }
 
+.disabledCardBorder {
+  background-color: $gray;
+}
+
 .disabledCard.card {
   &:hover {
     .circle {
-      background-color: $blue;
+      background-color: $gray;
     }
   }
+  .circle {
+    background-color: $gray;
+  }
+  cursor: auto;
 }
 
 .hover {

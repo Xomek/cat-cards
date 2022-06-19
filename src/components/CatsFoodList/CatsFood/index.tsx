@@ -10,7 +10,6 @@ interface ICatsFoodProps extends HTMLAttributes<HTMLDivElement> {
 const CatsFood: FC<ICatsFoodProps> = ({ className, catsFood, ...props }) => {
   const [selected, setSelected] = useState<boolean>(false);
   const [disabled, setDisabled] = useState<boolean>(false);
-  const [hover, setHover] = useState<boolean>(false);
   const [leaved, setLeaved] = useState<boolean>(false);
 
   useEffect(() => {
@@ -20,10 +19,15 @@ const CatsFood: FC<ICatsFoodProps> = ({ className, catsFood, ...props }) => {
   const active = selected ? styles.active : "";
   const activeBorder = selected ? styles.cardBorderActive : "";
   const disabledCard = disabled ? styles.disabledCard : "";
+  const disabledCardBorder = disabled ? styles.disabledCardBorder : "";
 
   const catsFoodStyles = filterStyles([styles.catsFood, className]);
   const cardStyles = filterStyles([active, disabledCard, styles.card]);
-  const cardBorderStyles = filterStyles([activeBorder, styles.cardBorder]);
+  const cardBorderStyles = filterStyles([
+    activeBorder,
+    disabledCardBorder,
+    styles.cardBorder,
+  ]);
 
   const onClickCard = () => {
     if (!disabled) {
