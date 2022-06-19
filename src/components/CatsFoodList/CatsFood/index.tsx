@@ -90,6 +90,7 @@ const CatsFood: FC<ICatsFoodProps> = ({ className, catsFood, ...props }) => {
             )}
           </span>
         </div>
+        <img className={styles.img} src={catsFood.imgSrc} alt="img" />
         <div className={circleStyles}>
           <div className={styles.weight}>{catsFood.weight}</div>
           <span className={styles.kg}>кг</span>

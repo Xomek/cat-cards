@@ -19,4 +19,5 @@ export interface ICatsFood {
   weight: EWeightFood;
   description: string;
   count: number;
+  imgSrc: string;
 }
