@@ -1,7 +1,12 @@
 import { FC } from "react";
+import { Home } from "./page";
 
 const App: FC = () => {
-  return <></>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 };
 
 export default App;
