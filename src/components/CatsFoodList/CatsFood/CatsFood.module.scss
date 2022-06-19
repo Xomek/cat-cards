@@ -13,6 +13,7 @@
   width: 328px;
   height: 488px;
   background-color: $blue;
+  border-radius: 14px;
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
 }
 .card {
@@ -23,6 +24,7 @@
   left: 4px;
   width: 320px;
   height: 480px;
+  border-radius: 11px;
   background-color: #fff;
   clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
 }
