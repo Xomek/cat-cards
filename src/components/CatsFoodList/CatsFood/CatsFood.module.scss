@@ -35,12 +35,6 @@
   }
 }
 
-.cardActive {
-  &::after {
-    border-right: 4px solid $pink;
-  }
-}
-
 .img {
   position: absolute;
   width: 300px;
@@ -135,14 +129,6 @@
   line-height: 22px;
 }
 
-.selected {
-  border: 4px solid $pink;
-}
-
-.activeCircle {
-  background-color: $pink;
-}
-
 .disabled {
   color: $yellow;
   font-weight: 400;
@@ -169,4 +155,14 @@
 
 .hover {
   color: $pink;
+}
+
+.active {
+  border: 4px solid $pink;
+  &::after {
+    border-right: 4px solid $pink;
+  }
+  .circle {
+    background-color: $pink;
+  }
 }
