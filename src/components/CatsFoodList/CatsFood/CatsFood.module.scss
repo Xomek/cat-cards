@@ -7,32 +7,24 @@
   cursor: pointer;
 }
 
-.card {
-  position: relative;
-  background-color: white;
-  min-height: 480px;
+.cardBorder {
   margin-bottom: 14px;
   position: relative;
+  width: 328px;
+  height: 488px;
+  background-color: $blue;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+}
+.card {
+  user-select: none;
+  position: relative;
   padding: 20px 48px;
-  border: 4px solid $blue;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left bottom;
-  &::after {
-    content: "";
-    z-index: 100;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    background-image: url("../../../../public/assets/image/bg.jpg");
-    top: -41px;
-    left: -41px;
-    display: inline-block;
-    border-right: 4px solid $blue;
-
-    transform: rotateZ(45deg);
-  }
+  top: 4px;
+  left: 4px;
+  width: 320px;
+  height: 480px;
+  background-color: #fff;
+  clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
 }
 
 .img {
@@ -122,6 +114,7 @@
   font-size: 42px;
   line-height: 22px;
   margin-bottom: 8px;
+  letter-spacing: -2px;
 }
 
 .kg {
@@ -158,11 +151,11 @@
 }
 
 .active {
-  border: 4px solid $pink;
-  &::after {
-    border-right: 4px solid $pink;
-  }
   .circle {
     background-color: $pink;
   }
+}
+
+.cardBorderActive {
+  background-color: $pink;
 }

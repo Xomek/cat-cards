@@ -1,9 +1,11 @@
+@import "../../scss/palette.scss";
+
 .title {
   font-weight: 300;
   font-size: 36px;
   line-height: 44px;
   text-align: center;
   color: #fff;
-  text-shadow: 0px 1px 1px #000000;
-  margin-bottom: 60px;
+  text-shadow: 0px 1px 1px $black;
+  margin-bottom: 40px;
 }
