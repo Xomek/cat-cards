@@ -30,7 +30,7 @@ const Home: FC = () => {
       present: 2,
       weight: EWeightFood.two,
       description: "Головы щучьи с чесноком да свежайшая сёмгушка.",
-      count: 1,
+      count: 0,
     },
     {
       id: "3",
@@ -40,7 +40,7 @@ const Home: FC = () => {
       present: 5,
       weight: EWeightFood.five,
       description: "Филе из цыплят с трюфелями в бульоне.",
-      count: 0,
+      count: 32,
     },
   ];
 

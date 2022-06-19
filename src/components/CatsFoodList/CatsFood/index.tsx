@@ -98,7 +98,9 @@ const CatsFood: FC<ICatsFoodProps> = ({ className, catsFood, ...props }) => {
       {selected && !disabled ? (
         <div className={styles.link}>{catsFood.description}</div>
       ) : disabled ? (
-        <div className={styles.disabled}>Печалька, с курой закончился.</div>
+        <div className={styles.disabled}>
+          Печалька, {catsFood.taste} закончился.
+        </div>
       ) : (
         <div className={styles.link}>
           <span className={styles.linkText}>Чего сидишь? Порадуй котэ,</span>
