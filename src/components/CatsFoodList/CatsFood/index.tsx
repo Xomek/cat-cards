@@ -11,6 +11,7 @@ const CatsFood: FC<ICatsFoodProps> = ({ className, catsFood, ...props }) => {
   const [selected, setSelected] = useState<boolean>(false);
   const [disabled, setDisabled] = useState<boolean>(false);
   const [hover, setHover] = useState<boolean>(false);
+  const [leaved, setLeaved] = useState<boolean>(false);
 
   useEffect(() => {
     if (catsFood.count === 0) setDisabled(true);
@@ -27,7 +28,12 @@ const CatsFood: FC<ICatsFoodProps> = ({ className, catsFood, ...props }) => {
   const onClickCard = () => {
     if (!disabled) {
       setSelected((prevState) => !prevState);
+      setLeaved(false);
     }
+  };
+
+  const onLeaveCard = () => {
+    setLeaved(true);
   };
 
   return (
@@ -36,12 +42,11 @@ const CatsFood: FC<ICatsFoodProps> = ({ className, catsFood, ...props }) => {
         <div
           className={cardStyles}
           onClick={onClickCard}
-          onMouseEnter={selected ? () => setHover(true) : () => {}}
-          onMouseLeave={() => setHover(false)}
+          onMouseLeave={onLeaveCard}
         >
           {disabled && <div className={styles.maskDisabled}></div>}
           <div className={styles.tagname}>
-            {hover && selected && !disabled ? (
+            {leaved && selected && !disabled ? (
               <span className={styles.hover}>Котэ не одобряет?</span>
             ) : (
               "Сказачное заморское яство"
