@@ -20,7 +20,7 @@ const Home: FC = () => {
       present: 1,
       weight: EWeightFood.zeroFive,
       description: "Печень утки разварная с артишоками.",
-      count: 23,
+      count: 12,
     },
     {
       id: "2",

@@ -13,10 +13,14 @@ body {
 }
 
 .page {
-  height: 100vh;
-  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  height: 100vh;
+}
+
+@media (max-width: 1193px) {
+  .page {
+    height: 100%;
+  }
 }
