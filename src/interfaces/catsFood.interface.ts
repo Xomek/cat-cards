@@ -17,4 +17,6 @@ export interface ICatsFood {
   servings: number;
   present: number;
   weight: EWeightFood;
+  description: string;
+  count: number;
 }

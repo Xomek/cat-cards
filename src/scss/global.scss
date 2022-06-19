@@ -1,9 +1,8 @@
 body {
   font-family: "Exo 2", sans-serif;
   background-image: url("../../public/assets/image/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: top center;
+  background-size: cover;
 }
 
 .container {
@@ -15,6 +14,7 @@ body {
 
 .page {
   height: 100vh;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;

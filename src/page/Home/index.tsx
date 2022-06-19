@@ -19,6 +19,8 @@ const Home: FC = () => {
       servings: 10,
       present: 1,
       weight: EWeightFood.zeroFive,
+      description: "Печень утки разварная с артишоками.",
+      count: 23,
     },
     {
       id: "2",
@@ -27,6 +29,8 @@ const Home: FC = () => {
       servings: 40,
       present: 2,
       weight: EWeightFood.two,
+      description: "Головы щучьи с чесноком да свежайшая сёмгушка.",
+      count: 1,
     },
     {
       id: "3",
@@ -35,13 +39,17 @@ const Home: FC = () => {
       servings: 100,
       present: 5,
       weight: EWeightFood.five,
+      description: "Филе из цыплят с трюфелями в бульоне.",
+      count: 0,
     },
   ];
 
   return (
     <div className={homeStyles}>
-      <h2 className={styles.title}>Ты сегодня покормил кота?</h2>
-      <CatsFoodList catsFoodArr={catsFoodArr} />
+      <div className="container">
+        <h2 className={styles.title}>Ты сегодня покормил кота?</h2>
+        <CatsFoodList catsFoodArr={catsFoodArr} />
+      </div>
     </div>
   );
 };
